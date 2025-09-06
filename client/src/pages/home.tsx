@@ -62,6 +62,7 @@ export default function Home() {
                 variant="outline"
                 className="bg-transparent text-foreground px-8 py-4 rounded-lg font-semibold text-lg border-2 border-border hover:border-primary hover:text-primary transition-all duration-200"
                 data-testid="button-learn-more"
+                onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Learn More
               </Button>
@@ -70,7 +71,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="py-24 px-6 bg-muted/30">
+        <section id="features" className="py-24 px-6 bg-muted/30">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4" data-testid="text-features-title">
